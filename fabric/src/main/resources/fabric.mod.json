@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "thevoiddimension",
+  "version": "${version}",
+  "name": "The Void Dimension",
+  "description": "Add the void superflat world type preset as separate dimension.",
+  "authors": [
+    "mahmudindev"
+  ],
+  "contact": {
+    "homepage": "https://github.com/mahmudindev",
+    "sources": "https://github.com/mahmudindev/mcmod-thevoiddimension"
+  },
+  "license": "ARR",
+  "icon": "assets/thevoiddimension/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.mahmudindev.mcmod.thevoiddimension.fabric.TheVoidDimensionFabric"
+    ],
+    "client": [
+      "com.github.mahmudindev.mcmod.thevoiddimension.fabric.client.TheVoidDimensionFabricClient"
+    ]
+  },
+  "mixins": [
+    "thevoiddimension.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "dimensionfixer": ">=0.0.9",
+    "worldportal": ">=0.0.9"
+  },
+  "suggests": {
+    "fabric-api": "*"
+  }
+}
